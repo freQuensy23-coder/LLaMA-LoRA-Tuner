@@ -148,7 +148,7 @@ When you are done, run `sky stop <cluster_name>` to stop the cluster. To termina
 
 ```bash
 pip install -r requirements.lock.txt
-python app.py --data_dir='./data' --base_model='decapoda-research/llama-7b-hf' --timezone='Atlantic/Reykjavik' --share
+python app.py --data_dir='./data' --base_model='openlm-research/open_llama_7b' --timezone='Atlantic/Reykjavik' --share
 ```
 
 You will see the local and public URLs of the app in the terminal. Open the URL in your browser to use the app.

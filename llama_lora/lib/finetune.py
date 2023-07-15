@@ -244,6 +244,9 @@ def train(
     #     0  # unk. we want this to be different from the eos token
     # )
     tokenizer.padding_side = "left"  # Allow batched inference
+    if tokenizer.pad_token is None:
+        print(f"[WARNING] Tokenizer has no pad_token set, setting it to 1.")
+        tokenizer.pad_token_id = 1
 
     try:
         model = prepare_model_for_int8_training(model)

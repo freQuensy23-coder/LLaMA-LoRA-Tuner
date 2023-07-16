@@ -161,7 +161,7 @@ For more options, see `python app.py --help`.
   To test the UI without loading the language model, use the `--ui_dev_mode` flag:
 
   ```bash
-  python app.py --data_dir='./data' --base_model='openlm-research/open_llama_7b' --share --ui_dev_mode
+  python app.py --data_dir='./data' --base_model='openlm-research/open_llama_7b_v2' --share --ui_dev_mode
   ```
 
   > To use [Gradio Auto-Reloading](https://gradio.app/developing-faster-with-reload-mode/#python-ide-reload), a `config.yaml` file is required since command line arguments are not supported. There's a sample file to start with: `cp config.yaml.sample config.yaml`. Then, just run `gradio app.py`.
